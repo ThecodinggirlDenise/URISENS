@@ -1,3 +1,158 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.circle {
+	width: 30px;
+	/* Adjust size as needed */
+	height: 30px;
+	/* Adjust size as needed */
+	background-color: darkblue;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	right: 76%;
+	/* Adjust distance from the right side */
+	transform: translateY(-50%);
+}
+
+* {
+
+	margin: 0;
+
+	padding: 0;
+
+	font-family: sans-serif;
+
+	box-sizing: border-box;
+
+}
+
+
+
+.ad {
+	font-weight: 700;
+}
+
+h1 {
+
+	position: absolute;
+
+	top: 30%;
+
+	font-size: 60px;
+
+	color: white;
+
+}
+
+.box {
+
+	width: 500px;
+
+	height: 50px;
+
+	background-color: white;
+
+	border-radius: 30px;
+
+	display: flex;
+
+	align-items: center;
+
+	padding: 20px;
+
+}
+
+.box>i {
+
+	font-size: 20px;
+
+	color: #777;
+
+}
+
+.box>input {
+
+	flex: 1;
+
+	height: 40px;
+
+	border: none;
+
+	outline: none;
+
+	font-size: 18px;
+
+	padding-left: 10px;
+
+
+}
+
+.float-parent-element {
+	width: 50%;
+}
+
+.float-child-element {
+	float: left;
+	width: 50%;
+}
+
+.red {
+	background-color: red;
+
+	height: 100px;
+}
+
+.yellow {
+	margin-left: 500%;
+	height: 100px;
+	background-color: yellow;
+}
+
+.book-box {
+	border: 2px solid lightblue;
+	/* Border style */
+	border-radius: 8px;
+	/* Rounded corners */
+	margin-bottom: 20px;
+	/* Add some spacing between book items */
+	padding: 20px;
+	/* Add padding for better spacing inside the box */
+}
+
+.book-content {
+	margin-bottom: 10px;
+	/* Add some spacing between book content and icons */
+}
+
+.icon-container {
+	display: flex;
+	/* Display icons in a row */
+}
+
+.icon-container>* {
+	margin-right: 10px;
+	/* Add some spacing between icons */
+}
+
+button:hover {
+	background-color: rgb(52, 235, 255);
+	/* Change this to whatever color you desire */
+	color: white;
+	/* Change this to the desired text color */
+}
+
+.sidebar-link {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	text-decoration: none;
+	color: black;
+	transition: font-weight 0.3s;
+	/* Add transition effect for smoother change */
+}
+
+.sidebar-link:hover {
+	font-weight: bold;
+}

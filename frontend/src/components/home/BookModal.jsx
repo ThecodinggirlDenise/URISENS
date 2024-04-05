@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { AiOutlineClose } from 'react-icons/ai';
 import { PiBookOpenTextLight } from 'react-icons/pi';
 import { BiUserCircle } from 'react-icons/bi';
-
+import '../home/bookstyle.css';
 const BookModal = ({ book, onClose }) => {
   return (
     <div
@@ -16,20 +17,18 @@ const BookModal = ({ book, onClose }) => {
           className='absolute right-6 top-6 text-3xl text-red-600 cursor-pointer'
           onClick={onClose}
         />
-        <h2 className='w-fit px-4 py-1 bg-red-300 rounded-lg'>
-          {book.publishYear}
-        </h2>
-        <h4 className='my-2 text-gray-500'>{book._id}</h4>
+
+
         <div className='flex justify-start items-center gap-x-2'>
-          <PiBookOpenTextLight className='text-red-300 text-2xl' />
+          <PiBookOpenTextLight className='text-blue-300 text-2xl' />
           <h2 className='my-1'>{book.title}</h2>
         </div>
         <div className='flex justify-start items-center gap-x-2'>
-          <BiUserCircle className='text-red-300 text-2xl' />
+          <BiUserCircle className='text-blue-300 text-2xl' />
           <h2 className='my-1'>{book.author}</h2>
         </div>
-        <p className='mt-4'>Anything You want to show</p>
-        <p className='my-2'>
+        <p className='mt-4' style={{ fontSize: '23px', fontWeight: 'bold' }}>PATIENT INFORMATION</p>
+        <p className='my-9'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia
           voluptatum sint. Nisi impedit libero eveniet cum vitae qui expedita
           necessitatibus assumenda laboriosam, facilis iste cumque a pariatur
@@ -37,8 +36,12 @@ const BookModal = ({ book, onClose }) => {
           dolorum est? Deserunt placeat cumque quo dicta architecto, dolore
           vitae voluptate sequi repellat!
         </p>
+        <p className='mt-1' style={{ fontSize: '23px', fontWeight: 'bold' }}>TIME CHART</p>
+
       </div>
+
     </div>
+
   );
 };
 
